@@ -68,12 +68,21 @@ app.post('/gasto', (req, res) => {
 });
 
 // ✅ Ver todos los gastos de un usuario
+// ✅ Ver todos los gastos de un usuario ordenados por fecha (más reciente primero)
 app.get('/gastos/:email', (req, res) => {
   const email = req.params.email;
-  const lista = gastos.filter(g => g.email === email);
+
+  const lista = gastos
+    .filter(g => g.email === email)
+    .sort((a, b) => new Date(b.fecha) - new Date(a.fecha)); // orden descendente
+
+  if (lista.length === 0) {
+    return res.status(404).json({ mensaje: 'No se encontraron gastos para este usuario.' });
+  }
 
   res.json({ gastos: lista });
 });
+
 
 // 🟢 Iniciar servidor
 app.listen(PORT, () => {
