@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const PORT = 3000;
-
+app.use(express.static('public'));
 app.use(bodyParser.json());
 
 // Simulamos base de datos en memoria
@@ -40,7 +40,17 @@ app.post('/login', (req, res) => {
 
 // ✅ Cargar gasto manual
 app.post('/gasto', (req, res) => {
-  const { email, monto, categoria } = req.body;
+// En app.js, dentro del endpoint POST /gasto
+const { email, monto, categoria, descripcion } = req.body;
+
+const nuevoGasto = {
+  id: gastos.length + 1,
+  email,
+  monto,
+  categoria,
+  descripcion: descripcion || '', // opcional
+  fecha: new Date().toISOString().split('T')[0]
+};
 
   if (!email || !monto || !categoria) {
     return res.status(400).json({ mensaje: 'Email, monto y categoría son obligatorios.' });

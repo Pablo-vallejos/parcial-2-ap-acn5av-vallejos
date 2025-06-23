@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gastos por Categoría</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>Resumen de gastos por categoría</h2>
+  <input type="text" id="emailInput" placeholder="Ingresá tu email" />
+  <button onclick="cargarGrafico()">Ver gráfico</button>
+
+  <canvas id="graficoGastos" width="400" height="400"></canvas>
+
+  <script>
+    async function cargarGrafico() {
+      const email = document.getElementById('emailInput').value;
+      const response = await fetch(`http://localhost:3000/gastos/${email}`);
+      const data = await response.json();
+
+      const gastos = data.gastos;
+
+      // Agrupar y sumar por categoría
+      const agrupados = {};
+      gastos.forEach(g => {
+        agrupados[g.categoria] = (agrupados[g.categoria] || 0) + g.monto;
+      });
+
+      const categorias = Object.keys(agrupados);
+      const montos = Object.values(agrupados);
+
+      // Renderizar gráfico
+      const ctx = document.getElementById('graficoGastos').getContext('2d');
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: categorias,
+          datasets: [{
+            label: 'Gastos por categoría',
+            data: montos,
+            backgroundColor: [
+              '#FF6384', '#36A2EB', '#FFCE56', '#9CCC65', '#BA68C8', '#FF7043'
+            ],
+          }]
+        }
+      });
+    }
+  </script>
+</body>
+</html>
