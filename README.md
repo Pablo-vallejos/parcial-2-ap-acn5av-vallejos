@@ -29,8 +29,8 @@ El cambio queda anotado en el documento de gestión de cambios del proyecto y se
 ----------------------------------------------
 LINKS DE DOCUMENTACION 
 --------------------------------------------
-Objetivos: https://docs.google.com/document/d/1uGeAqbb4lOQxgePt7sss9KPnkvvCeLahiIWGC3YHDLU/edit?usp=sharing
-Stakeholders: https://docs.google.com/document/d/1hXc5xD74uaGEIuBv9pHdMXeb4f7rGskbtA26VTPWfpo/edit?usp=sharing
-HUs: https://docs.google.com/spreadsheets/d/13X0TdA3dP913Og4hVHPgHDEoaUOYtD2kr34NQfQHU-s/edit?usp=sharing
-Problematica: https://docs.google.com/document/d/1vSCYGC1P3xDkoFP0vgp7Y2iAhEBQHK-raI5JE577m04/edit?usp=sharing
-Estimaciones: https://docs.google.com/spreadsheets/d/1i4bD1tMwGP8h22OHqbEcxQSgHAjkAyyLvbqvMeoNHqw/edit?usp=sharing
+Objetivos: https://docs.google.com/document/d/1uGeAqbb4lOQxgePt7sss9KPnkvvCeLahiIWGC3YHDLU/edit?usp=sharing \n
+Stakeholders: https://docs.google.com/document/d/1hXc5xD74uaGEIuBv9pHdMXeb4f7rGskbtA26VTPWfpo/edit?usp=sharing \n
+HUs: https://docs.google.com/spreadsheets/d/13X0TdA3dP913Og4hVHPgHDEoaUOYtD2kr34NQfQHU-s/edit?usp=sharing \n
+Problematica: https://docs.google.com/document/d/1vSCYGC1P3xDkoFP0vgp7Y2iAhEBQHK-raI5JE577m04/edit?usp=sharing \n
+Estimaciones: https://docs.google.com/spreadsheets/d/1i4bD1tMwGP8h22OHqbEcxQSgHAjkAyyLvbqvMeoNHqw/edit?usp=sharing \n
