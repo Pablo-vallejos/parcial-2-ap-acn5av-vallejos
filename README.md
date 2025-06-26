@@ -34,3 +34,6 @@ Stakeholders: https://docs.google.com/document/d/1hXc5xD74uaGEIuBv9pHdMXeb4f7rGs
 HUs: https://docs.google.com/spreadsheets/d/13X0TdA3dP913Og4hVHPgHDEoaUOYtD2kr34NQfQHU-s/edit?usp=sharing 
 Problematica: https://docs.google.com/document/d/1vSCYGC1P3xDkoFP0vgp7Y2iAhEBQHK-raI5JE577m04/edit?usp=sharing
 Estimaciones: https://docs.google.com/spreadsheets/d/1i4bD1tMwGP8h22OHqbEcxQSgHAjkAyyLvbqvMeoNHqw/edit?usp=sharing 
+
+---------------------------------------------
+Se produce un cambio de metodologia a scrumban
